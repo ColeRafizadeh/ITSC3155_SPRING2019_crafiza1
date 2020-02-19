@@ -16,8 +16,18 @@ class Dessert
 end
 
 class JellyBean < Dessert
-  # add code for setters and getters www
+  attr_accessor :flavor
+
   def initialize(flavor)
-    # your code here
+    @flavor = flavor
+    @name = @flavor + ' jelly bean'
+    @calories = 5
+  end
+  def delicious?
+    return false if @flavor.eql? 'licorice'
+    super
   end
 end
+
+b = JellyBean.new 'licorice'
+p b.delicious?
