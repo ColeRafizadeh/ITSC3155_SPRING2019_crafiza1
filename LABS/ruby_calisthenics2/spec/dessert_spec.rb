@@ -24,7 +24,7 @@ describe Dessert do
     end
   end
   
-  describe 'delicious and healthy', :disabled => true do
+  describe 'delicious and healthy' do
     describe '-cake' do
       before :each do
         @dessert = Dessert.new('cake', 400)
