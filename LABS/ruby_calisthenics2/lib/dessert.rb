@@ -16,7 +16,7 @@ class Dessert
 end
 
 class JellyBean < Dessert
-  # add code for setters and getters
+  # add code for setters and getters www
   def initialize(flavor)
     # your code here
   end
