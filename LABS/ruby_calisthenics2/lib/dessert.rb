@@ -28,6 +28,6 @@ class JellyBean < Dessert
     super
   end
 end
-
+#
 b = JellyBean.new 'licorice'
 p b.delicious?
