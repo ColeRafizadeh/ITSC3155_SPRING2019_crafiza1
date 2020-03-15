@@ -1,12 +1,18 @@
 class ArticlesController < ApplicationController
     def new
     end
+    
     def show
-        @article = Article.find(param[:id])
+        @article = Article.find(params[:id])
     end
     def create
-        @article = Article.mnew(params[:article])
+        @article = Article.new(article_params)
+        
         @article.save
         redirect_to @article
     end
 end
+private
+    def article_params
+        params.require(:article).permit(:title, :text)
+    end
