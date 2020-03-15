@@ -1,9 +1,10 @@
 
 h1 {
     size: 32px;
-    color: blue;
 }
-
+body {
+    background: #33DCE030;
+}
 
 
 /*
