@@ -6,7 +6,6 @@ class ArticlesController < ApplicationController
     end
     def create
         @article = Article.mnew(params[:article])
-        
         @article.save
         redirect_to @article
     end
